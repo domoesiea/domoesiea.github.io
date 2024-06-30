@@ -18,22 +18,38 @@
             color: #fff;
             padding: 1em 0;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #333;
         }
         nav ul li {
-            display: inline;
             margin: 0 1em;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 0.5em 1em;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background: #007BFF;
+            color: #fff;
         }
         section {
             padding: 2em;
             margin: 1em 0;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
         section:hover {
@@ -44,11 +60,8 @@
             color: #333;
         }
         .project, .experience, .education, .certification {
-            background: #fff;
             padding: 1em;
             margin: 1em 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .project h3, .experience h3, .education h3, .certification h3 {
             margin-top: 0;
@@ -66,15 +79,15 @@
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Domo Adama's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="menu-link">About Me</a></li>
+                <li><a href="#projects" class="menu-link">Projects</a></li>
+                <li><a href="#experience" class="menu-link">Experience</a></li>
+                <li><a href="#education" class="menu-link">Education</a></li>
+                <li><a href="#certifications" class="menu-link">Certifications</a></li>
+                <li><a href="#contact" class="menu-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -172,6 +185,24 @@
             });
             section.addEventListener('mouseout', () => {
                 section.style.backgroundColor = '#fff';
+            });
+        });
+
+        // Highlight active menu link
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', (event) => {
+                document.querySelectorAll('.menu-link').forEach(link => link.classList.remove('active'));
+                event.target.classList.add('active');
+            });
+        });
+
+        // Smooth scroll to sections
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
