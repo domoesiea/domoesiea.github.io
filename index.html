@@ -95,21 +95,33 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1em 0;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table, th, td {
+        border: 1px solid #e0e0e0;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f9f9f9;
+        font-weight: 600;
+    }
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
         }
-        table, th, td {
-            border: 1px solid #e0e0e0;
+        nav ul li {
+            margin: 0.5em 0;
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f9f9f9;
-            font-weight: 600;
-        }
+    }
     </style>
     
 </head>
@@ -256,7 +268,8 @@
                     <p>Technologies Used: Utilized Scikit-learn, Pandas, and Matplotlib for data analysis and visualization.</p>
                     <p>Project Management: Coordinated with marketing and sales teams to understand requirements and integrate feedback.</p>
                     <p>Results: Improved revenue prediction accuracy by 15%, enabling better strategic planning and resource optimization.</p>
-                
+                    <p></p>
+                    <p></p>
                     <h3>Data Analyst Intern</h3>
                     <p>Centre MURAZ Biomedical Research - Burkina Faso (08/2021 - 02/2022)</p>
                     <p>Conducted data analysis to support biomedical research, gaining practical experience in data handling and statistical methods.</p>
@@ -274,9 +287,8 @@
             
                 <h3>OpenDom'X IoT Analysis Platform</h3>
                 <p>Focused on Electronics, Programming, Embedded Systems, Forensics, System and Network, Reverse Engineering, IoT, and Git.</p>
-                <p>Connected devices using different communication protocols, studied the security of these devices, and developed a mobile application to control them. This project focused on IoT security and technology integration.</p>
-            
-        
+                <p>Connected devices using different communication protocols, studied the security of these devices, and developed a mobile application to control them.</p>
+                <p>This project focused on IoT security and technology integration.</p>
         
             <h3>Bullet Hell Game Development in Python</h3>
             <p>Developed a bullet hell game using Python, demonstrating advanced programming skills and game design principles. (2022)</p>
