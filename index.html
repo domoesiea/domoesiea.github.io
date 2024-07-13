@@ -284,21 +284,16 @@
         <div class="project">
             <h3>Minimalist MAS: Two Intelligent Agents in Mirror Image</h3>
                 <p>One WW Gold Hunter Agent + One WW Simulator Agent</p>
-                <p>Hunter Agent:</p>
                 <hr>
-                <p> Receives percepts from the simulator, updates its beliefs and preferences, chooses an action to execute, and sends it to the simulator agent.</p>
-                <p></p>
+                <p>Hunter Agent: Receives percepts from the simulator, updates its beliefs and preferences, chooses an action to execute, and sends it to the simulator agent.</p>
+                <hr>
                 <p>Simulator Agent: Its percepts are the hunter agent's actions. It updates the actual state of the WW. Derives the percepts of the hunter agent and sends them. </p>
                 <hr>
-                <p>Implementation Details: Both agents are CLP web services. To simplify implementing those services and keep them as declarative as possible, they are stateless (REST).</p>
-                <hr>
-                <p>A JavaScript-HTML-CSS GUI client runs in a web browser. The client keeps in the browser local storage both the WW state and the hunter agent's beliefs (partial, uncertain, observed WW substate).</p>
-                <p>It is implemented using the JS-HTML-CSS Quasar frontend framework, a layer on top of the Vue framework.</p>
+                <p>Implementation Details: Both agents are CLP web services. To simplify implementing those services and keep them as declarative as possible, they are stateless (REST). A JavaScript-HTML-CSS GUI client runs in a web browser. The client keeps in the browser local storage both the WW state and the hunter agent's beliefs (partial, uncertain, observed WW substate). It is implemented using the JS-HTML-CSS Quasar frontend framework, a layer on top of the Vue framework.</p>
                 <hr>
                 <p>Interaction Process: Since the GUI keeps the state of both agents, it sends at each game step:</p>
-                <P>To the simulator agent: In addition to the new plan to execute, the WW states that the GUI received from the simulator at the last two game steps.</P>
-                <p>To the hunter agent: In addition to the new percepts, the WW beliefs and preferences that the GUI received from the hunter at the last two game steps.</p>
-                <P>Eternal WW properties and certain eternal beliefs sent in step 1.</P>
+                <P>To the simulator agent: In addition to the new plan to execute, the WW states that the GUI received from the simulator at the last two game steps. To the hunter agent: In addition to the new percepts, the WW beliefs and preferences that the GUI received from the hunter at the last two game steps. Eternal WW properties and certain eternal beliefs sent in step 1.</P>
+           
             <h3>OpenDom'X IoT Analysis Platform</h3>
                 <p>Focused on Electronics, Programming, Embedded Systems, Forensics, System and Network, Reverse Engineering, IoT, and Git.</p>
                 <p>Connected devices using different communication protocols, studied the security of these devices, and developed a mobile application to control them.</p>
