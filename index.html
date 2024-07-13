@@ -259,7 +259,7 @@
 </div>
 </section>
             <section id="experience" class="interactive">
-                <h2>Other Experiences</h2>
+                <h2>Experiences</h2>
                 <div class="experience">
                     <h3>4th Year Internship – Development of a Revenue Prediction Tool</h3>
                     <h3>Qotto Startup, Paris – May to August 2024</h3>
@@ -282,12 +282,24 @@
         
         <h2>Projects</h2>
         <div class="project">
-            <h3>Wumpus World as a Multi-Agent System in Prolog</h3>
-            <p>Implemented the Wumpus World (WW) as a multi-agent system (MAS) in Prolog, including a gold hunter agent and a WW simulator agent.</p>
-        
-        
-            
-                <h3>OpenDom'X IoT Analysis Platform</h3>
+            <h3>Minimalist MAS: Two Intelligent Agents in Mirror Image</h3>
+                <p>One WW Gold Hunter Agent + One WW Simulator Agent</p>
+                <p>Hunter Agent:</p>
+                <hr>
+                <p> Receives percepts from the simulator, updates its beliefs and preferences, chooses an action to execute, and sends it to the simulator agent.</p>
+                <p></p>
+                <p>Simulator Agent: Its percepts are the hunter agent's actions. It updates the actual state of the WW. Derives the percepts of the hunter agent and sends them. </p>
+                <hr>
+                <p>Implementation Details: Both agents are CLP web services. To simplify implementing those services and keep them as declarative as possible, they are stateless (REST).</p>
+                <hr>
+                <p>A JavaScript-HTML-CSS GUI client runs in a web browser. The client keeps in the browser local storage both the WW state and the hunter agent's beliefs (partial, uncertain, observed WW substate).</p>
+                <p>It is implemented using the JS-HTML-CSS Quasar frontend framework, a layer on top of the Vue framework.</p>
+                <hr>
+                <p>Interaction Process: Since the GUI keeps the state of both agents, it sends at each game step:</p>
+                <P>To the simulator agent: In addition to the new plan to execute, the WW states that the GUI received from the simulator at the last two game steps.</P>
+                <p>To the hunter agent: In addition to the new percepts, the WW beliefs and preferences that the GUI received from the hunter at the last two game steps.</p>
+                <P>Eternal WW properties and certain eternal beliefs sent in step 1.</P>
+            <h3>OpenDom'X IoT Analysis Platform</h3>
                 <p>Focused on Electronics, Programming, Embedded Systems, Forensics, System and Network, Reverse Engineering, IoT, and Git.</p>
                 <p>Connected devices using different communication protocols, studied the security of these devices, and developed a mobile application to control them.</p>
                 <p>This project focused on IoT security and technology integration.</p>
