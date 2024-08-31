@@ -15,7 +15,7 @@ new Vue({
   auteur: 'Antoine de Saint-Exupéry',
   editeur: 'Éditions Gallimard',
   anneeEdition: 1943,
-  photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg',
+  photo: 'Image/profil2.jpg',
   resume: 'Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub',
 },
 {
@@ -23,7 +23,7 @@ new Vue({
   auteur: 'Victor Hugo',
   editeur: 'Éditions Hachette',
   anneeEdition: 1862,
-  photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg',
+  photo: 'Image/profil2.jpg',
   resume: 'Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub',
 },
 {
@@ -31,7 +31,7 @@ new Vue({
   auteur: 'George Orwell',
   editeur: 'Secker & Warburg',
   anneeEdition: 1949,
-  photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg',
+  photo: 'Image/profil2.jpg',
   resume: 'Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub Un conte philosophique qui raconte l\'histoire d\'un jeune prince qui voyage de planète en planète. ER uhsbbbb uzxbub uzybixz uzbxub',
 }
 ],
@@ -42,21 +42,21 @@ new Vue({
                 heure: '14:00',
                 lieu: 'Salle d\'exposition',
                 description: 'Découvrez les œuvres d\'artisans locaux et participez à des ateliers interactifs. Un concert en plein air avec des artistes locaux pour célébrer l\'été.',
-                photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+                photo: 'Image/profil2.jpg'
             },
             {
                 nom: 'Concert en plein air',
                 heure: '19:00',
                 lieu: 'Parc du château',
                 description: 'Un concert en plein air avec des artistes locaux pour célébrer l\'été. ',
-                photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+                photo: 'Image/profil2.jpg'
             },
             {
                 nom: 'Atelier de peinture',
                 heure: '10:00',
                 lieu: 'Centre culturel',
                 description: 'Participez à un atelier de peinture ouvert à tous les niveaux.',
-                photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+                photo: 'Image/profil2.jpg'
             }
         ],
 
@@ -103,22 +103,22 @@ new Vue({
     {
         nom: 'Jean Dupont',
         role: 'Président',
-        photo:'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+        photo:'Image/profil2.jpg'
     },
     {
         nom: 'Marie Curie',
         role: 'Vice-Présidente',
-        photo: 'C:/Users/DELL/SitewebAmbohimad/Image/prolie.jpg'
+        photo: 'Image/prolie.jpg'
     },
     {
         nom: 'Ali Vardar',
         role: 'Secrétaire',
-        photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+        photo: 'Image/profil2.jpg'
     },
     {
         nom: 'Lucie Martin',
         role: 'Trésorière',
-        photo: 'C:/Users/DELL/SitewebAmbohimad/Image/profil2.jpg'
+        photo: 'Image/profil2.jpg'
     },
 
     
