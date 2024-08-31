@@ -83,6 +83,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     background-color: #ffffff; /* Vert pour "Qui Sommes nous" */
     color: black;
     display: flex;
+    justify-content: center;
 }
 
 .Qui-sommes-nous button:hover {
@@ -95,6 +96,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .Nos-evenements button {
     background-color: #0a0a0a; /* Bleu clair pour "Nos événements" */
     color: white;
+    justify-content: center;
 }
 
 .Nos-evenements button:hover {
@@ -106,6 +108,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .Ici-en-mayenne button {
     background-color: #ffffff; /* Jaune pour "Ici en Mayenne" */
     color: black;
+    justify-content: center;
 }
 
 .Ici-en-mayenne button:hover {
@@ -117,6 +120,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .Labas-a-madagascar button {
     background-color: #0e0e0e; /* Rouge pour "Là-bas en Madagascar" */
     color: white;
+    justify-content: center;
 }
 
 .Labas-a-madagascar button:hover {
@@ -128,6 +132,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .Ambohitheque button {
     background-color: #ffffff; /* Violet pour "Ambohithèque" */
     color: black;
+    justify-content: center;
 }
 
 .Ambohitheque button:hover {
@@ -205,6 +210,7 @@ nav ul li a {
     background-color:white; /* Rouge pour "Qui Sommes Nous" */
     display: flex;
     color: #4a4a4a;
+    justify-content: center;
 }
 
 /* Effet au survol des boutons */
@@ -224,6 +230,7 @@ nav ul li a {
     background-color: black; /* Blanc pour "Nos événements" */
     color: #ffffff; /* Couleur du texte en noir pour contraste */
     display: flex;
+    justify-content: center;
     
 }
 
@@ -243,6 +250,7 @@ nav ul li a {
     background-color: white; /* Rouge pour "Ici en Mayenne" */
     display: flex;
     color: #4a4a4a;
+    justify-content: center;
 }
 
 .Ici-en-mayenne:hover {
@@ -261,6 +269,7 @@ nav ul li a {
     background-color: black; /* Blanc pour "Là-bas en Madagascar" */
     color: #ffffff; /* Couleur du texte en noir pour contraste */
     display: flex;
+    justify-content: center;
 }
 
 .Labas-a-madagascar:hover {
@@ -278,6 +287,7 @@ nav ul li a {
     background-color: white; /* Vert pour "Ambohithèque" */
     display: flex;
     color: #4a4a4a;
+    justify-content: center;
 }
 
 .Ambohitheque:hover {
@@ -828,25 +838,29 @@ nav ul li a:hover, nav ul li a.active {
 
     .Nos-evenements button {
         font-size: 8px;
-        align-items: center;
+        justify-content: center;
     }
 
     .Ici-en-mayenne button {
         font-size: 8px;
+        justify-content: center;
     }
 
     .Labas-a-madagascar button {
         font-size: 8px;
+        justify-content: center;
     }
     
 
     
     .Ambohitheque button {
         font-size: 8px;
+        justify-content: center;
     }
     
     .menu-link button {
         width: 100%; /* Les boutons prennent toute la largeur */
+        justify-content: center;
         
     }
 }
