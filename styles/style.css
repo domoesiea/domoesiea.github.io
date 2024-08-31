@@ -727,267 +727,14 @@ nav ul li a:hover, nav ul li a.active {
 
 
 /* Media Queries pour les petits écrans */
-@media (max-width: 500px) {
-
-    .icon-item span {
-        font-size: 11px; /* Légère réduction de la taille du texte */
-    }
-
-    .icon-link i {
-        font-size: 14px; /* Taille de l'icône légèrement réduite */
-    }
-
-
-    .icon-container {
-        gap: 15px; /* Réduction de l'espace entre les éléments */
-    }
-
-    nav ul {
-        flex-direction: row; /* Affiche les éléments en ligne */
-        justify-content: flex-start; /* Aligne les éléments à gauche */
-    }
-
-    nav ul li {
-        flex: 1 1 100px; /* Permet aux éléments de s'étendre mais aussi de revenir à la ligne si besoin */
-        min-width: 80px; /* Largeur minimale pour les éléments */
-    }
-
-    nav ul li a {
-        height: 19px; /* Ajuste la hauteur pour les écrans plus petits */
-        font-size: 0.6em; /* Ajuste la taille du texte */
-    }
-
-
-    .social-icons {
-        gap: 1em; /* Espace réduit entre les icônes sociales */
-    }
-
-    .icon-text a {
-        font-size: 2.5vw; /* Ajuste la taille du texte pour les petits écrans */
-    }
-
-    .icon-text span {
-        font-size: 1.2vw; /* Ajuste la taille du texte pour les petits écrans */
-    }
-    .section {
-        margin-bottom: 40px; /* Ajout de marge en bas */
-    }
-
-    .book-photo-container {
-        flex: 0 0 15%; /*Taile de l photos */
-        border-radius: 5px;
-    }
-
-    .book-summary {
-        
-        font-size: 12px;
-        line-height: 1.4; /*espacement entre les lignes */
-    
-    }
-
-    .book-info {
-        flex: 0 0 35%;
-        margin: 0;
-        padding: 0;
-        line-height: 1.4;
-        font-size: 12px;
-    }
-
-    .book-info span {
-        margin: 0 5px; /* Utiliser une petite marge pour espacer les éléments */
-        padding: 0; /* Pas de padding */
-        line-height: 1.4; /* Optionnel : régler la hauteur de ligne pour la lisibilité */
-    }
-
-    .book-title {
-        font-size: 14px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 5px;
-    }
-
-    .book-author,
-    .book-editor,
-    .book-year {
-        font-size: 12px;
-        margin-inline-end: 0;
-        
-    }
-
-    .Qui-sommes-nous button{
-        font-size: 6px;
-        justify-content: center;
-        
-    }
-
-    .Qui-sommes-nous a{
-        font-size: 7px;
-        justify-content: center;
-        
-    }
-
-    .Nos-evenements button {
-        font-size: 7px;
-        align-items: center;
-    }
-
-    .Ici-en-mayenne button {
-        font-size: 7px;
-    }
-
-    .Labas-a-madagascar button {
-        font-size: 6px;
-    }
-    
-
-    
-    .Ambohitheque button {
-        font-size: 7px;
-    }
-    
-    .menu-link button {
-        width: 100%; /* Les boutons prennent toute la largeur */
-        
-    }
-}
-
-
-/* Media Queries pour les  écrans moyens */
-@media (max-width: 768px) {
-
-    .icon-item span {
-        font-size: 11px; /* Légère réduction de la taille du texte */
-    }
-
-    .icon-link i {
-        font-size: 14px; /* Taille de l'icône légèrement réduite */
-    }
-
-
-    .icon-container {
-        gap: 15px; /* Réduction de l'espace entre les éléments */
-    }
-
-    nav ul {
-        flex-direction: row; /* Affiche les éléments en ligne */
-        justify-content: flex-start; /* Aligne les éléments à gauche */
-    }
-
-    nav ul li {
-        flex: 1 1 100px; /* Permet aux éléments de s'étendre mais aussi de revenir à la ligne si besoin */
-        min-width: 80px; /* Largeur minimale pour les éléments */
-    }
-
-    nav ul li a {
-        height: 19px; /* Ajuste la hauteur pour les écrans plus petits */
-        font-size: 0.6em; /* Ajuste la taille du texte */
-    }
-
-
-    .social-icons {
-        gap: 1em; /* Espace réduit entre les icônes sociales */
-    }
-
-    .icon-text a {
-        font-size: 2.5vw; /* Ajuste la taille du texte pour les petits écrans */
-    }
-
-    .icon-text span {
-        font-size: 1.2vw; /* Ajuste la taille du texte pour les petits écrans */
-    }
-    .section {
-        margin-bottom: 40px; /* Ajout de marge en bas */
-    }
-
-    .book-photo-container {
-        flex: 0 0 15%; /*Taile de l photos */
-        border-radius: 5px;
-    }
-
-    .book-summary {
-        
-        font-size: 12px;
-        line-height: 1.4; /*espacement entre les lignes */
-    
-    }
-
-    .book-info {
-        flex: 0 0 35%;
-        margin: 0;
-        padding: 0;
-        line-height: 1.4;
-        font-size: 12px;
-    }
-
-    .book-info span {
-        margin: 0 5px; /* Utiliser une petite marge pour espacer les éléments */
-        padding: 0; /* Pas de padding */
-        line-height: 1.4; /* Optionnel : régler la hauteur de ligne pour la lisibilité */
-    }
-
-    .book-title {
-        font-size: 14px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 5px;
-    }
-
-    .book-author,
-    .book-editor,
-    .book-year {
-        font-size: 12px;
-        margin-inline-end: 0;
-        
-    }
-
-    .Qui-sommes-nous button{
-        font-size: 6px;
-        justify-content: center;
-        
-    }
-
-    .Qui-sommes-nous a{
-        font-size: 6px;
-        justify-content: center;
-        
-    }
-
-    .Nos-evenements button {
-        font-size: 9px;
-        align-items: center;
-    }
-
-    .Ici-en-mayenne button {
-        font-size: 9px;
-    }
-
-    .Labas-a-madagascar button {
-        font-size: 6px;
-    }
-    
-
-    
-    .Ambohitheque button {
-        font-size: 8px;
-    }
-    
-    .menu-link button {
-        width: 100%; /* Les boutons prennent toute la largeur */
-        
-    }
-}
-
-/* Grande ecran */
-
-/* Media Queries pour les petits écrans */
 @media (max-width: 1200px) {
 
     .icon-item span {
-        font-size: 11px; /* Légère réduction de la taille du texte */
+        font-size: 8px; /* Légère réduction de la taille du texte */
     }
 
     .icon-link i {
-        font-size: 14px; /* Taille de l'icône légèrement réduite */
+        font-size: 11px; /* Taille de l'icône légèrement réduite */
     }
 
 
@@ -1074,18 +821,18 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .Qui-sommes-nous a{
-        font-size: 11px;
+        font-size: 7px;
         justify-content: center;
         
     }
 
     .Nos-evenements button {
-        font-size: 11px;
+        font-size: 8px;
         align-items: center;
     }
 
     .Ici-en-mayenne button {
-        font-size: 11px;
+        font-size: 8px;
     }
 
     .Labas-a-madagascar button {
@@ -1095,8 +842,7 @@ nav ul li a:hover, nav ul li a.active {
 
     
     .Ambohitheque button {
-        font-size: 9px;
-        
+        font-size: 8px;
     }
     
     .menu-link button {
@@ -1104,3 +850,5 @@ nav ul li a:hover, nav ul li a.active {
         
     }
 }
+
+
