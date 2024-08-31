@@ -1,0 +1,802 @@
+/* Style général pour tous les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Police moderne et élégante */
+    color: #2C3E50; /* Couleur principale pour les titres */
+    line-height: 1.2; /* Améliore la lisibilité */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
+}
+
+/* Effet ombre légère pour donner de la profondeur */
+h1, h2, h3 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Style spécifique pour le titre principal (h1) */
+h1 {
+    font-size: 1.2em; /* Taille plus grande pour le titre principal */
+    color: #E74C3C; /* Couleur rouge vif pour attirer l'attention */
+    letter-spacing: 2px; /* Espacement entre les lettres pour plus d'impact */
+}
+
+/* Style pour les sous-titres (h2) */
+h2 {
+    font-size: 0.9em;
+    color: #3498DB; /* Bleu pour les sous-titres */
+    border-bottom: 2px solid #3498DB; /* Ligne en bas du titre */
+    padding-bottom: 10px; /* Espace entre le texte et la ligne */
+}
+
+/* Style pour les titres de section (h3) */
+h3 {
+    font-size: 2em;
+    color: #16A085; /* Vert pour les titres de section */
+}
+
+/* Style pour les autres titres (h4, h5, h6) */
+h4, h5, h6 {
+    font-size: 1.5em;
+    color: #8E44AD; /* Violet pour les petits titres */
+}
+
+/* Ajout d'une légère animation lors du survol */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #F39C12; /* Change la couleur au survol */
+    transform: scale(1.05); /* Agrandit légèrement au survol */
+    transition: all 0.3s ease; /* Transition douce */
+}
+
+
+/* Conteneur principal du menu */
+.menu {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 0px; /* Espace entre les éléments du menu */
+    
+    
+}
+
+/* Liens du menu */
+.menu-link {
+    text-decoration: none; /* Supprime le soulignement */
+    /*color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 16px; /* Taille de la police */
+}
+
+/* Boutons dans les liens */
+.menu-link button {
+    background-color: #007BFF; /* Couleur de fond par défaut des boutons */
+    border: none; /* Supprime la bordure des boutons */
+    /*border-radius: 25px; /* Boutons arrondis */
+    /*padding: 10px 20px;*/ /* Espacement interne */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Curseur de pointeur au survol */
+    transition:  transform 0.3s, box-shadow 0.3s; /* Transition douce */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+
+/* Styles spécifiques pour chaque bouton */
+.Qui-sommes-nous button {
+    background-color: #ffffff; /* Vert pour "Qui Sommes nous" */
+    color: black;
+}
+
+.Qui-sommes-nous button:hover {
+    background-color: #ffffff; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+
+.Nos-evenements button {
+    background-color: #0a0a0a; /* Bleu clair pour "Nos événements" */
+    color: white;
+}
+
+.Nos-evenements button:hover {
+    background-color: #000000; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.Ici-en-mayenne button {
+    background-color: #ffffff; /* Jaune pour "Ici en Mayenne" */
+    color: black;
+}
+
+.Ici-en-mayenne button:hover {
+    background-color: #ffffff; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.Labas-a-madagascar button {
+    background-color: #0e0e0e; /* Rouge pour "Là-bas en Madagascar" */
+    color: white;
+}
+
+.Labas-a-madagascar button:hover {
+    background-color: #000000; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.Ambohitheque button {
+    background-color: #ffffff; /* Violet pour "Ambohithèque" */
+    color: black;
+}
+
+.Ambohitheque button:hover {
+    background-color: #ffffff; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #4a4a4a;
+}
+
+
+header {
+    background: #ffffff;
+    color: #007bff;
+    /*padding: 1em 0;*/
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+/* Styles de base du menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: safe center;/* Centre le menu */
+    background: #ffffff;
+    padding: 1em 0; /* Ajoute de l'espace autour des éléments */
+}
+
+nav ul li {
+    /*margin: 0 ; /* Espace entre les éléments */
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    height: 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff; /* Couleur du texte */
+    text-decoration: none;
+    padding: 1em 2em; /* Augmente le padding pour agrandir le menu */
+    display: flex;
+    margin: 0;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+    /*border-radius: 10px;*/ /* Arrondit les coins des boutons */
+    font-size: 1.2em; /* Augmente la taille du texte */
+    font-weight: bold; /* Met en gras le texte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour plus de profondeur */
+}
+
+/* Styles spécifiques pour chaque élément de menu */
+.qui-sommes-nous {
+    background-color:blue; /* Rouge pour "Qui Sommes Nous" */
+    display: flex;
+}
+
+.Qui-sommes-nous {
+    background-color:white; /* Rouge pour "Qui Sommes Nous" */
+    display: flex;
+    color: #4a4a4a;
+}
+
+/* Effet au survol des boutons */
+.Qui-sommes-nous:hover {
+    background-color: #ffffff; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.nos-evenements {
+    background-color: white; /* Blanc pour "Nos événements" */
+    color: #4a4a4a; /* Couleur du texte en noir pour contraste */
+    display: flex;
+}
+
+.Nos-evenements {
+    background-color: black; /* Blanc pour "Nos événements" */
+    color: #ffffff; /* Couleur du texte en noir pour contraste */
+    display: flex;
+    
+}
+
+/* Effet au survol des boutons */
+.Nos-evenements:hover {
+    background-color: black; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.ici-en-mayenne {
+    background-color: red; /* Rouge pour "Ici en Mayenne" */
+    display: flex;
+}
+
+.Ici-en-mayenne {
+    background-color: white; /* Rouge pour "Ici en Mayenne" */
+    display: flex;
+    color: #4a4a4a;
+}
+
+.Ici-en-mayenne:hover {
+    background-color: white; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.labas-a-madagascar {
+    background-color: white; /* Blanc pour "Là-bas en Madagascar" */
+    color: #4a4a4a; /* Couleur du texte en noir pour contraste */
+    display: flex;
+}
+
+.Labas-a-madagascar {
+    background-color: black; /* Blanc pour "Là-bas en Madagascar" */
+    color: #ffffff; /* Couleur du texte en noir pour contraste */
+    display: flex;
+}
+
+.Labas-a-madagascar:hover {
+    background-color: black; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.ambohitheque {
+    background-color: green; /* Vert pour "Ambohithèque" */
+    display: flex;
+}
+
+.Ambohitheque {
+    background-color: white; /* Vert pour "Ambohithèque" */
+    display: flex;
+    color: #4a4a4a;
+}
+
+.Ambohitheque:hover {
+    background-color: white; /* Couleur de fond au survol */
+    transform: translateY(-5px); /* Effet de "saut" au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+.footer {
+    background-color: #1976D2; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+   
+}
+.footer1 {
+    background-color: #1976D2; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    
+}
+
+
+.qui-sommes-nous-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.qui-sommes-nous-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qui-sommes-nous-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/*.qui-sommes-nous-text p:first-of-type {
+font-weight: bold;
+}
+
+.qui-sommes-nous-text p:last-of-type {
+font-style: italic;
+margin-bottom: 0;
+}*/
+
+.members-section {
+    margin-top: 0;
+}
+
+.member-photo {
+    
+    width: 10vw; /* L'image occupe 1/3 de la largeur de l'écran */
+    height: 10vw; /* La hauteur est égale à la largeur pour garder une forme circulaire */
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* L'image couvre entièrement le conteneur circulaire */
+    border: 5px solid #ccc; /* Bordure de 5px pour un contraste visible */
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.member-photo:hover {
+    transform: scale(1.05);
+}
+
+.member-b {
+    flex: 0 0 85%;
+}
+
+
+.member-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.member-role {
+    color: #555;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.col-12 {
+    max-width: 100%;
+}
+
+.col-md-10 {
+    max-width: 90%;
+}
+
+
+/* Effet hover */
+nav ul li a:hover, nav ul li a.active {
+    opacity: 0.9; /* Légère transparence lors du survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Augmente l'ombre lors du survol */
+}
+
+.social-icons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1em;
+    padding: 10px 1rem 1rem
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px; /* Espace entre les icônes */
+    justify-content: flex-end; /* Aligne les icônes à droite */
+    margin-top: 20px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column; /* Organise l'icône et le texte en colonne */
+    align-items: center; /* Centre le texte sous l'icône */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+.icon-item span {
+    margin-top: 0.5em; /* Espace entre l'icône et le texte */
+    font-size: 0.9em;  /* Taille du texte */
+    color: #0e141b;    /* Couleur du texte */
+    font-weight: bold;
+    padding: 0;
+}
+
+
+.icon-link {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007BFF; /* Couleur de fond par défaut */
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transitions douces */
+}
+
+.icon-link:hover {
+    transform: translateY(-5px); /* L'icône "saute" légèrement au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre portée plus intense au survol */
+}
+
+.facebook-icon {
+    background-color: #3b5998; /* Couleur Facebook */
+}
+
+.contact-icon {
+    background-color: #28a745; /* Couleur pour "Nous Contacter" */
+}
+
+.adherer-icon {
+    background-color: #17a2b8; /* Couleur pour "Adhérer" */
+}
+
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.icon-text a {
+    color: #007bff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-text a:hover {
+    color: #02060b;
+}
+
+.icon-text span {
+    margin-top: 0.5em; /* Espace entre l'icône et le texte */
+    font-size: 0.7em;  /* Taille du texte */
+    color: #0e141b;    /* Couleur du texte */
+    font-weight: bold;
+    padding: 0;
+}
+
+
+.link-style {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Prend la couleur du texte environnant */
+    transition: color 0.3s; /* Ajoute une transition douce pour le changement de couleur */
+}
+
+.link-style:hover {
+    color: #007bff; /* Change la couleur au survol, remplacez par la couleur souhaitée */
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    font-size: 16px;
+}
+
+.event-item {
+    margin-bottom: 15px;
+}
+
+.event-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event-info {
+    margin-left: 10px;
+}
+
+.event-time, .event-location {
+    margin: 5px 0;
+    color: gray;
+    }
+
+.ici-en-mayenne-title1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ici-en-mayenne-details1 {
+    font-size: 16px;
+}
+
+.event-item1 {
+    display: flex;
+    /*align-items: center;*/
+    margin-bottom: 25px;
+    line-height: 1.2;
+    
+}
+
+
+.event-description1 {
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    
+}
+
+.event-description1 span {
+    display: block; 
+    margin: 0;
+    padding: 0; /* Pas de padding */
+    line-height: 1.2; /* Optionnel : régler la hauteur de ligne pour la lisibilité */
+}
+
+.reverse-layout1 {
+    flex-direction: row-reverse;
+}
+
+.event-photo-container {
+    flex-shrink: 0; /* Empêche la photo de rétrécir */
+    margin-right: 15px; /* Ajoute un espace entre la photo et le texte */
+}
+
+
+
+.event-photo1 {
+    width: 100px; /* Taille de l'image ajustée pour qu'elle soit petite */
+    height: 100px; /* Hauteur définie pour correspondre à la largeur */
+    border-radius: 20px; /* Coins arrondis */
+    object-fit: cover; /* S'assure que l'image couvre son conteneur */
+}
+
+.reverse-layout1 .event-photo-container {
+    margin-left: 15px; /* Espace à gauche dans le cas où la disposition est inversée */
+    margin-right: 0; /* Pas d'espace à droite */
+}
+
+
+.ambohitheque-card {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.ambohitheque-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3f51b5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-item {
+    display: flex;
+    margin-bottom: 30px;
+    /*align-items: center;*/
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+}
+
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.book-photo-container {
+    flex: 0 0 7%; /*Taile de l photos */
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.reverse-layout .book-photo-container {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.book-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-photo:hover {
+    transform: scale(1.05);
+}
+
+.book-info {
+    flex:  0 0 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.book-info span {
+    display: flex; 
+    margin: 0 5px; /* Utiliser une petite marge pour espacer les éléments */
+    padding: 0; /* Pas de padding */
+    line-height: 1.4; /* Optionnel : régler la hauteur de ligne pour la lisibilité */
+}
+
+.reverse-layout .book-info {
+    margin-right: 20px; /*supprime toue marge à droite de book infos*/
+    margin-left: 20px;
+}
+
+
+.book-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    /*margin-bottom: 10px;*/
+}
+
+.book-author,
+.book-editor,
+.book-year {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.book-summary {
+    flex: 0 0 78%;
+    flex: 1;
+    text-align: justify;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.4; /*espacement entre les lignes */
+}
+
+/* Ajout d'un effet d'ombre sur le texte lors du survol */
+.book-info:hover .book-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajout d'une transition sur la taille de l'image */
+.book-photo {
+    transition: transform 0.3s ease;
+}
+
+.book-photo:hover {
+    transform: scale(1.05);
+}
+
+
+.event-item2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; /* Espace entre les événements */
+    
+    background-color: #f9f9f9; /* Fond légèrement gris */
+    border-radius: 8px; /* Coins arrondis */
+    border: 1px solid #ddd; /* Bordure subtile */
+}
+
+.event-date-time2 {
+     
+     margin-bottom: 0px;/* Espace sous la date et l'heure */
+     margin-top: 0;
+     line-height: 1.4;
+}
+
+.event-date2, .event-time2 {
+    margin: 0;
+    font-weight: bold; /* Rend le texte de la date et de l'heure plus visible */
+    font-size: 1em;
+   
+}
+
+.event-details2 {
+     /* Sépare la date et l'heure sur la même ligne */
+     margin-bottom: 0px;/* Espace sous la date et l'heure */
+     margin-top: 0;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+
+
+
+.event-description2, .event-location2 {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+    
+}
+
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 800px) {
+
+    nav ul {
+        flex-direction: row; /* Affiche les éléments en ligne */
+        justify-content: flex-start; /* Aligne les éléments à gauche */
+    }
+
+    nav ul li {
+        flex: 1 1 100px; /* Permet aux éléments de s'étendre mais aussi de revenir à la ligne si besoin */
+        min-width: 80px; /* Largeur minimale pour les éléments */
+    }
+
+    nav ul li a {
+        height: 19px; /* Ajuste la hauteur pour les écrans plus petits */
+        font-size: 0.6em; /* Ajuste la taille du texte */
+    }
+
+
+    .social-icons {
+        gap: 1em; /* Espace réduit entre les icônes sociales */
+    }
+
+    .icon-text a {
+        font-size: 2.5vw; /* Ajuste la taille du texte pour les petits écrans */
+    }
+
+    .icon-text span {
+        font-size: 1.2vw; /* Ajuste la taille du texte pour les petits écrans */
+    }
+    .section {
+        margin-bottom: 40px; /* Ajout de marge en bas */
+    }
+
+    .book-photo-container {
+        flex: 0 0 15%; /*Taile de l photos */
+        border-radius: 5px;
+    }
+
+    .book-summary {
+        
+        font-size: 12px;
+        line-height: 1.4; /*espacement entre les lignes */
+    
+    }
+
+    .book-info {
+        flex: 0 0 35%;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+
+    .book-info span {
+        margin: 0 5px; /* Utiliser une petite marge pour espacer les éléments */
+        padding: 0; /* Pas de padding */
+        line-height: 1.4; /* Optionnel : régler la hauteur de ligne pour la lisibilité */
+    }
+
+    .book-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .book-author,
+    .book-editor,
+    .book-year {
+        font-size: 12px;
+        margin-inline-end: 0;
+        
+    }
+}
