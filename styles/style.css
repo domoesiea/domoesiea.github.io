@@ -801,7 +801,8 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .Qui-sommes-nous button{
-        font-size: 9px;
+        font-size: 7.5px;
+        align-items: center;
     }
 
     .Nos-evenements button {
