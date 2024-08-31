@@ -62,7 +62,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     text-decoration: none; /* Supprime le soulignement */
     /*color: white; /* Couleur du texte */
     font-weight: bold; /* Texte en gras */
-    font-size: 12px; /* Taille de la police */
+    font-size: 14px; /* Taille de la police */
 }
 
 /* Boutons dans les liens */
@@ -82,6 +82,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .Qui-sommes-nous button {
     background-color: #ffffff; /* Vert pour "Qui Sommes nous" */
     color: black;
+    display: flex;
 }
 
 .Qui-sommes-nous button:hover {
@@ -728,6 +729,19 @@ nav ul li a:hover, nav ul li a.active {
 /* Media Queries pour les petits écrans */
 @media (max-width: 800px) {
 
+    .icon-item span {
+        font-size: 11px; /* Légère réduction de la taille du texte */
+    }
+
+    .icon-link i {
+        font-size: 14px; /* Taille de l'icône légèrement réduite */
+    }
+
+
+    .icon-container {
+        gap: 15px; /* Réduction de l'espace entre les éléments */
+    }
+
     nav ul {
         flex-direction: row; /* Affiche les éléments en ligne */
         justify-content: flex-start; /* Aligne les éléments à gauche */
@@ -802,26 +816,37 @@ nav ul li a:hover, nav ul li a.active {
 
     .Qui-sommes-nous button{
         font-size: 7px;
+        justify-content: center;
+        
+    }
+
+    .Qui-sommes-nous a{
+        font-size: 7px;
+        justify-content: center;
         
     }
 
     .Nos-evenements button {
-        font-size: 9px;
+        font-size: 7px;
         align-items: center;
     }
 
     .Ici-en-mayenne button {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .Labas-a-madagascar button {
-        font-size: 9px;
+        font-size: 7px;
     }
     
 
     
     .Ambohitheque button {
-        font-size: 9px;
+        font-size: 7px;
     }
     
+    .menu-link button {
+        width: 100%; /* Les boutons prennent toute la largeur */
+        
+    }
 }
