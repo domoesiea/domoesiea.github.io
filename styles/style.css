@@ -799,4 +799,8 @@ nav ul li a:hover, nav ul li a.active {
         margin-inline-end: 0;
         
     }
+
+    .Qui-sommes-nous button {
+        font-size: 9px;
+    }
 }
