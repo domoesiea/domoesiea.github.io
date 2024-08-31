@@ -62,7 +62,7 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     text-decoration: none; /* Supprime le soulignement */
     /*color: white; /* Couleur du texte */
     font-weight: bold; /* Texte en gras */
-    font-size: 16px; /* Taille de la police */
+    font-size: 12px; /* Taille de la police */
 }
 
 /* Boutons dans les liens */
@@ -800,7 +800,26 @@ nav ul li a:hover, nav ul li a.active {
         
     }
 
-    .Qui-sommes-nous button {
+    .Qui-sommes-nous button{
         font-size: 9px;
     }
+
+    .Nos-evenements button {
+        font-size: 9px;
+    }
+
+    .Ici-en-mayenne button {
+        font-size: 9px;
+    }
+
+    .Labas-a-madagascar button {
+        font-size: 9px;
+    }
+    
+
+    
+    .Ambohitheque button {
+        font-size: 9px;
+    }
+    
 }
