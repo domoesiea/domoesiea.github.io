@@ -801,12 +801,13 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .Qui-sommes-nous button{
-        font-size: 7.5px;
+        font-size: 7px;
         align-items: center;
     }
 
     .Nos-evenements button {
         font-size: 9px;
+        align-items: center;
     }
 
     .Ici-en-mayenne button {
