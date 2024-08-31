@@ -91,6 +91,7 @@
                     <!-- Présentation de l'Association -->
                     <v-card class="section qui-sommes-nous-card" v-show="showquisommesnous">
                         
+                        <v-card-text></v-card-text>
                         
                         <h1> Qui sommes nous ?</h1> 
                         
@@ -133,10 +134,10 @@
 
                     <!-- Actions réalisées par l'Association -->
                     <v-card class="section qui-sommes-nous-card" v-show="shownosevenement">
+                        <v-card-text></v-card-text>
+                        <h1>Nos évènement</h1>
                         
-                        <h1>Les membres du conseils d'administration :</h1>
-                        
-                        
+                        <v-card-text></v-card-text>
                         <h2>Ici</h2>
                         
                         <v-list>
@@ -154,7 +155,7 @@
                                     </div>
                         
                                     <div class="event-details2">
-                                        <p class="event-description2">{{ evenement.description }}</p>
+                                        <p class="event-description2" style="font-size: large; font-weight: bold;">{{ evenement.description }}</p>
                                         <p class="event-location2">Lieu : {{ evenement.lieu }}</p>
                                     </div>
                                 </v-list-item>
@@ -180,7 +181,7 @@
                                     </div>
                         
                                     <div class="event-details2">
-                                        <p class="event-description2">{{ evenement.description }}</p>
+                                        <p class="event-description2" style="font-size: large; font-weight: bold;">{{ evenement.description }}</p>
                                         <p class="event-location2">Lieu : {{ evenement.lieu }}</p>
                                     </div>
                                 </v-list-item>
@@ -193,7 +194,7 @@
                     
 
                     <v-card class="section qui-sommes-nous-card" v-show="showicienmayenne"> 
-                        
+                        <v-card-text></v-card-text>
                         <h1>Ici en Mayenne</h1>
                             
                         <v-card-text class="ici-en-mayenne-details1">
@@ -223,7 +224,7 @@
                     
 
                     <v-card class="section qui-sommes-nous-card" v-show="showambohitheque">
-                        
+                        <v-card-text></v-card-text>
                         <h1>Ambohithèque</h1>
                         
                         <v-card-text class="ambohitheque-details">
