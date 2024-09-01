@@ -885,14 +885,15 @@ nav ul li a:hover, nav ul li a.active {
 
     .event-item2 {
         flex-direction: column;
-        align-items: center;
-        
+        align-items: left;
+        text-align: center;
     }
 
     .event-details2 {
         margin-left: 0;
         margin-left: 0px;
         margin-top: 10px;
+        text-align: center;
         
         font-size: 0.95em;
     }
@@ -900,7 +901,7 @@ nav ul li a:hover, nav ul li a.active {
     .event-info2 {
         margin-bottom: 0px;
         font-size: 0.95em;
-        text-align: left;
+        
     }
 
     .event-date2, .event-time2 {
