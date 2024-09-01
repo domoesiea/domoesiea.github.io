@@ -877,6 +877,69 @@ nav ul li a:hover, nav ul li a.active {
     .member-b {
         flex: 0 0 85%;
     }
+
+    .event-item2 {
+        
+        margin-bottom: 15px; /* Espace entre les événements */
+        
+        
+    }
+    
+    .event-date-time2 {
+         
+         margin-bottom: 0px;/* Espace sous la date et l'heure */
+         margin-top: 0;
+         line-height: 1.4;
+    }
+    
+    .event-date2, .event-time2 {
+        margin: 0;
+        font-weight: bold; /* Rend le texte de la date et de l'heure plus visible */
+        font-size: 0.8em;
+        line-height: 1.4;
+       
+    }
+    
+    .event-details2 {
+         
+        margin-top: 14px;
+        margin-left: 30px;
+    }
+    
+    
+    
+    .event-description2, .event-location2 {
+        
+        font-size: 0.8em;
+        line-height: 1;  
+    }
+
+    h1 {
+        font-size: 1em; /* Taille plus grande pour le titre principal */
+        color: #E74C3C; /* Couleur rouge vif pour attirer l'attention */
+        letter-spacing: 1px; /* Espacement entre les lettres pour plus d'impact */
+    }
+    
+    /* Style pour les sous-titres (h2) */
+    h2 {
+        font-size: 0.8em;
+        color: #3498DB; /* Bleu pour les sous-titres */
+        border-bottom: 2px solid #3498DB; /* Ligne en bas du titre */
+        padding-bottom: 8px; /* Espace entre le texte et la ligne */
+    }
+    
+    /* Style pour les titres de section (h3) */
+    h3 {
+        font-size: 1.8em;
+        color: #16A085; /* Vert pour les titres de section */
+    }
+    
+    /* Style pour les autres titres (h4, h5, h6) */
+    h4, h5, h6 {
+        font-size: 1.2em;
+        color: #8E44AD; /* Violet pour les petits titres */
+    }
+    
 }
 
 
