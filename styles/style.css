@@ -893,8 +893,7 @@ nav ul li a:hover, nav ul li a.active {
     }
     
     .event-date2, .event-time2 {
-        margin: 0;
-        font-weight: bold; /* Rend le texte de la date et de l'heure plus visible */
+       
         font-size: 0.8em;
         line-height: 1.4;
        
@@ -911,7 +910,7 @@ nav ul li a:hover, nav ul li a.active {
     .event-description2, .event-location2 {
         
         font-size: 0.8em;
-        line-height: 1;  
+        line-height: 1.4;  
     }
 
     h1 {
