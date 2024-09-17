@@ -4,129 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domo Adama's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f7fa;
-            color: #4a4a4a;
-        }
-        header {
-            background: #ffffff;
-            color: #007bff;
-            padding: 1em 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background: #ffffff;
-        }
-        nav ul li {
-            margin: 0 1em;
-        }
-        nav ul li a {
-            color: #007bff;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            display: block;
-            transition: background 0.3s, color 0.3s;
-            border-radius: 5px;
-        }
-        nav ul li a:hover, nav ul li a.active {
-            background: #007bff;
-            color: #ffffff;
-        }
-        section {
-            padding: 2em;
-            margin: 1em 0;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        section:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        h2 {
-            color: #333333;
-            font-weight: 700;
-        }
-        .about-me, .section-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .profile-pic, .section-image {
-            max-width: 100px;
-            margin: 0 1em 1em 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex-shrink: 0;
-        }
-        .about-text, .section-text {
-            flex: 1;
-            min-width: 300px;
-        }
-        #contact a {
-            color: #007bff;
-            text-decoration: none;
-            border-bottom: 1px solid #007bff;
-            transition: color 0.3s, border-bottom-color 0.3s;
-        }
-        #contact a:hover {
-            color: #0056b3;
-            border-bottom-color: #0056b3;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1em 0;
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-        table, th, td {
-            border: 1px solid #e0e0e0;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f9f9f9;
-            font-weight: 600;
-        }
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: row;
-                align-items: center;
-            }
-            nav ul li {
-                margin: 0.5em 0;
-            }
-            .about-me, .section-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .profile-pic, .section-image {
-                margin: 0 0 1em 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
+
+    
     
 </head>
 <body>
@@ -337,33 +217,7 @@
         <p>You can contact me at <a href="mailto:your@email.com">domo@et.esiea.fr</a></p>
     </section>
     
-    <script>
-        document.querySelectorAll('.interactive').forEach(section => {
-            section.addEventListener('mouseover', () => {
-                section.style.backgroundColor = '#e9ecef';
-            });
-            section.addEventListener('mouseout', () => {
-                section.style.backgroundColor = '#fff';
-            });
-        });
+    <script language="javascript" src="scripts/script.js"></script>
 
-        // Highlight active menu link
-        document.querySelectorAll('.menu-link').forEach(link => {
-            link.addEventListener('click', (event) => {
-                document.querySelectorAll('.menu-link').forEach(link => link.classList.remove('active'));
-                event.target.classList.add('active');
-            });
-        });
-
-        // Smooth scroll to sections
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
