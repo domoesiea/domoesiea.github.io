@@ -3,304 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambohimad </title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">  
-    
+    <title>Domo Adama's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #4a4a4a;
+        }
+        header {
+            background: #ffffff;
+            color: #007bff;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #ffffff;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background: #007bff;
+            color: #ffffff;
+        }
+        section {
+            padding: 2em;
+            margin: 1em 0;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333333;
+            font-weight: 700;
+        }
+        .about-me, .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .profile-pic, .section-image {
+            max-width: 100px;
+            margin: 0 1em 1em 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+        .about-text, .section-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        #contact a {
+            color: #007bff;
+            text-decoration: none;
+            border-bottom: 1px solid #007bff;
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        #contact a:hover {
+            color: #0056b3;
+            border-bottom-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        table, th, td {
+            border: 1px solid #e0e0e0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f9f9f9;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: row;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5em 0;
+            }
+            .about-me, .section-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-pic, .section-image {
+                margin: 0 0 1em 0;
+            }
+        }
+    </style>
     
 </head>
 <body>
-    <div id="app">
     <header>
-        
-        
-
-        <div class="icon-container" style="padding: 10px;">
-            <div class="icon-item">
-                <a href="https://www.facebook.com" target="_blank" class="icon-link facebook-icon">
-                    <i class="fab fa-facebook-f"></i> <!-- Icône de Facebook -->
-                </a>
-                <span>Nous suivre</span>
-            </div>
-            <div class="icon-item">
-                <a href="mailto:contact@example.com" class="icon-link contact-icon">
-                    <i class="fas fa-envelope"></i> <!-- Icône Nous Contacter -->
-                </a>
-                <span>Nous contacter</span>
-            </div>
-            <div class="icon-item">
-                <a href="/adherer" class="icon-link adherer-icon">
-                    <i class="fas fa-user-plus"></i> <!-- Icône Adhérer -->
-                </a>
-                <span>Adhérer</span>
-            </div>
-        </div>
-        
-        
-        
-        <h1>
-            <img src="Image\Logo.png" alt="Logo" style="width: 200px; height: auto; padding: 15px;">
-        </h1>
-        
+        <h1>Domo Adama's Portfolio</h1>
         <nav>
-            <ul style="padding: 0;">
-                <li href="#Qui_sommes_nous" class="menu-link qui-sommes-nous"></a></li>
-                <li href="#Nos_evenements" class="menu-link nos-evenements"></a></li>
-                <li href="#Ici_en_mayenne" class="menu-link ici-en-mayenne"></a></li>
-                <li href="#Labas_a_madagascar" class="menu-link labas-a-madagascar"></a></li>
-                <li href="#ambohitheque" class="menu-link ambohitheque"></a></li>
-            </ul>
-       
-        <nav>
-            <ul style="padding: 0;">
-                <li><a class="menu-link Qui-sommes-nous"><button  @click="ShowQuiSommesNous">Qui Sommes nous </button></a></li>
-                <li><a class="menu-link Nos-evenements" ><button class="menu-link" @click="ShowNosEvenement">Nos évènements</button></a></li>
-                <li><a class="menu-link Ici-en-mayenne"><button class="menu-link" @click="ShowIciEnMayenne" text>Ici en Mayenne</button></a></li>
-                <li><a class="menu-link Labas-a-madagascar"><button class="menu-link" @click="ShowLabasAMadagascar" text>Là-bas à Madagascar</button></a></li>
-                <li><a class="menu-link Ambohitheque"><button class="menu-link" @click="ShowAmbohitheque" text>Ambohithèque</button></a></li>
+            <ul>
+                <li><a href="#about" class="menu-link">About Me</a></li>
+                <li><a href="#education" class="menu-link">Education</a></li>
+                <li><a href="#experience" class="menu-link">Experience</a></li>
+                <li><a href="#projects" class="menu-link">Projects</a></li>
             </ul>
         </nav>
     </header>
     
+    <section id="about" class="interactive">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <img src="profil.jpg" alt="Ma photo de profil" class="profile-pic">
+            <div>
+                <p> Hello, my name is Domo Adama. I am currently in my fifth year at ESIEA, specializing in Artificial Intelligence and Data Science. I hold a Bachelor's degree in Applied Mathematics with a specialization in Statistics and Computer Science. Passionate about data, AI, and knowledge-based systems, I strive to develop innovative predictive models and solve complex problems using advanced data analysis techniques combined with expert systems.</p>
+                <p> Throughout my studies, I have gained a solid understanding of statistics, programming, machine learning algorithms, and the development of expert systems. My practical experience includes completing academic projects and internships, where I applied my skills to analyze data, develop predictive models, automate processes, and create systems that can reason and make informed decisions based on expert knowledge.</p>
+                <p> I am particularly interested in the development of knowledge-based intelligent agents, a field of AI that aims to create systems capable of reasoning and making complex decisions autonomously. My recent work also includes developing a prediction method with a relative error of 0.08, demonstrating my ability to create precise and reliable models for real-world applications.</p>
+                <p> I am always looking for new opportunities to learn, innovate, and apply my skills in AI and expert systems. Feel free to contact me to discuss potential projects or collaborations.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education" class="interactive">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Bachelor's Degree in Applied Mathematics, Specialization in Statistics and Computer Science</h3>
+            <p>Nazi Boni University (2018-2022)</p>
+    
+            <h3>Engineering Degree in Digital Engineering, Specializing in Artificial Intelligence and Data Science</h3>
+            <p>ESIEA - Laval (2022-2025)</p>
+            
+                <h2>Hard Skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SKILL</th>
+                            <th>AWARENESS</th>
+                            <th>INTERMEDIATE</th>
+                            <th>ADVANCED</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">Application Development</td>
+                        </tr>
+                        <tr>
+                            <td>Shell, Powershell, Python, C, C++, JAVA - System programming</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Programming for mobiles (flutter framework)</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>WEB applications (Node JS – PHP)</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">Computer Network</td>
+                        </tr>
+                        <tr>
+                            <td>Design, administration and maintenance of local area networks</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">Operating Systems Administration</td>
+                        </tr>
+                        <tr>
+                            <td>Linux server - Windows & Active Directory</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">Data Science</td>
+                        </tr>
+                        <tr>
+                            <td>SQL and NOSQL database administration, data analysis, R Language</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Data engineering (R language - machine learning – AI - Dataviz)</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Cloud architecture and Big data oriented database (hadoop)</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">CyberSecurity</td>
+                        </tr>
+                        <tr>
+                            <td>Cryptography, PKI and virology</td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style=" font-weight: bold; background-color: #f2f2f2;">Electronic & Embedded System</td>
+                        </tr>
+                        <tr>
+                            <td>Analogical & digital Electronic basics</td>
+                            <td></td>
+                            <td style="text-align: center">V</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+</div>
+</section>
+            <section id="experience" class="interactive">
+                <h2>Experiences</h2>
+                <div class="experience">
+                    <h3>4th Year Internship – Development of a Revenue Prediction Tool</h3>
+                    <h3>Qotto Startup, Paris – May to August 2024</h3>
+                    <p>Data Analysis: Collected, cleaned, and analyzed historical sales data using Python and SQL.</p>
+                    <p>Cloud Environment: Worked within Google Cloud, manipulating data in BigQuery, Tableau Prep and visualizing results using Tableau Online.</p>
+                    <p>Erosion Rate Analysis: Conducted an analysis to determine whether the global erosion rate was representative of individual erosion rates.</p>
+                    <p>Predictive Modeling: Designed and implemented machine learning models (linear regression, decision trees) to predict revenue.</p>
+                    <p>Technologies Used: Utilized Scikit-learn, Pandas, and Matplotlib for data analysis and visualization.</p>
+                    <p>Project Management: Coordinated with marketing and sales teams to understand requirements and integrate feedback.</p>
+                    <p>Results: Improved revenue prediction accuracy by 8%, enabling better strategic planning and resource optimization.</p>
+                    <p></p>
+                    <p></p>
+                    <h3>Data Analyst Intern</h3>
+                    <p>Centre MURAZ Biomedical Research - Burkina Faso (08/2021 - 02/2022)</p>
+                    <p>Conducted data analysis to support biomedical research, gaining practical experience in data handling and statistical methods.</p>
+                </div>
+            </section>
+    
+    <section id="projects" class="interactive">
+        
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Minimalist MAS: Two Intelligent Agents in Mirror Image</h3>
+                <p>One WW Gold Hunter Agent + One WW Simulator Agent</p>
+        
+           
+            <h3>OpenDom'X IoT Analysis Platform</h3>
+                <p>Focused on Electronics, Programming, Embedded Systems, Forensics, System and Network, Reverse Engineering, IoT, and Git.</p>
+                <p>Connected devices using different communication protocols, studied the security of these devices, and developed a mobile application to control them.</p>
+                <p>This project focused on IoT security and technology integration.</p>
+        
+            <h3>Bullet Hell Game Development in Python</h3>
+            <p>Developed a bullet hell game using Python, demonstrating advanced programming skills and game design principles. (2022)</p>
     
         
-        <v-app>
-            <v-main>
-                <v-container>
-                    
-                    <!-- Page d'accueil -->
-                    <v-card class="section" v-show="showaccueil">
-                        <v-row>
-                            <v-spacer class="col-3"></v-spacer>
-                            <v-card-text></v-card-text>
-                            <v-card-text>
-                                <v-row>
-                                    <v-spacer></v-spacer>
-                                    <v-img src="Image\acc.jpg" class="col-10"></v-img>
-                                    <v-spacer></v-spacer>
-                                </v-row>
-                            </v-card-text>
-                        </v-row>
-                    </v-card>
-                
-                    
-                    <!-- Présentation de l'Association -->
-                    <v-card class="section qui-sommes-nous-card" v-show="showquisommesnous">
-                        
-                        <v-card-text></v-card-text>
-                        
-                        <h1> Qui sommes nous ?</h1> 
-                        
-                        <v-card-text class="qui-sommes-nous-text">
-                            <p>L'Association Ambohimad se consacre à améliorer la communauté à travers diverses initiatives. Depuis notre fondation, nous avons réalisé plusieurs actions pour soutenir notre cause et aider ceux dans le besoin. Voici quelques-unes de nos réalisations : Nous croyons en la force du collectif et nous sommes toujours ouverts aux nouveaux membres qui partagent notre passion pour le changement positif.</p>    
-                        </v-card-text>
-
-                        
-                            <h2>Les membres du conseils d'administration :</h2>
-                        
-                        <!-- Section des membres du conseil d'administration -->
-                        <v-container class="section qui-sommes-nous-card" v-show="showquisommesnous">
-                            <v-list>
-                                <v-list-item-group>
-                                    <v-list-item v-for="membre in membres" :key="membre.nom">
-                                        
-                                        <v-img :src="membre.photo" class="member-photo" contain></v-img>
-                                       
-                                        <div class="member-b">
-                                            <v-list-item-title class="member-name">{{ membre.nom }}</v-list-item-title>
-                                            <v-list-item-subtitle class="member-role">{{ membre.role }}</v-list-item-subtitle>
-                                        
-                                        </div>
-                                        
-                                        
-                                    </v-list-item>
-                                </v-list-item-group>
-                            </v-list>
-                        </v-container>
-                        <v-card-title>
-                            On parle de nous :
-                        </v-card-title>
-                        <v-card-text>
-                            <a href="https://www.ouest-france.fr/article-lien" target="_blank" class="link-style">
-                                Ouest France 29 Février 2024
-                            </a>
-                        </v-card-text>
-                    </v-card>
-                
-
-                    <!-- Actions réalisées par l'Association -->
-                    <v-card class="section qui-sommes-nous-card" v-show="shownosevenement">
-                        <v-card-text></v-card-text>
-                        <h1>Nos évènement</h1>
-                        
-                        <v-card-text></v-card-text>
-                        <h2>Ici</h2>
-                        
-                        <v-list>
-                            <v-list-item-group>
-                                <v-list-item
-                                    v-for="evenement in evenementsici"
-                                    :key="evenement.nom"
-                                    class="event-item2"
-                                >
-                                    <div class="event-info2">
-                                        <div class="event-date-time2">
-                                            <p class="event-date2"><b>Date :</b> {{ evenement.date }}</p>
-                                            <p class="event-time2"><b>Heure :</b> {{ evenement.heure }}</p>
-                                        </div>
-                                    </div>
-                                    <div class="event-details2">
-                                        <p class="event-description2" style="font-size: large; font-weight: bold;">{{ evenement.description }}</p>
-                                        <p class="event-location2">Lieu : {{ evenement.lieu }}</p>
-                                    </div>
-                                </v-list-item>
-                            </v-list-item-group>
-                        </v-list>
-                           
-                        
-                        
-                        <h2>La-bas</h2>
-                        
-                        <v-list>
-                            <v-list-item-group>
-                                <v-list-item
-                                    v-for="evenement in evenementsici"
-                                    :key="evenement.nom"
-                                    class="event-item2"
-                                >
-                                    <div class="event-info2">
-                                        
-                                            <p class="event-date2"><b>Date :</b> {{ evenement.date }} </p>
-                                            <p class="event-time2"><b>Heure :</b> {{ evenement.heure }}</p>
-                                        
-                                    </div>
-                        
-                                    <div class="event-details2" >
-                                        <p class="event-description2" style="font-size: large; font-weight: bold;">{{ evenement.description }}</p>
-                                        <p class="event-location2">Lieu : {{ evenement.lieu }}</p>
-                                    </div>
-                                </v-list-item>
-                            </v-list-item-group>
-                        </v-list>
-                        
-                                      
-                    </v-card>
-
-                    
-
-                    <v-card class="section qui-sommes-nous-card" v-show="showicienmayenne"> 
-                        <v-card-text></v-card-text>
-                        <h1>Ici en Mayenne</h1>
-                            
-                        <v-card-text class="ici-en-mayenne-details1">
-                            <div v-for="(evenement, index) in evenementsicienmayenne" 
-                                 :key="evenement.nom" 
-                                 class="event-item1" 
-                                 :class="{'reverse-layout1': index % 2 !== 0}">
-                        
-                                <div class="event-photo-container">
-                                    <v-img :src="evenement.photo" 
-                                           class="event-photo1" 
-                                           contain>
-                                    </v-img>
-                                </div>
-                        
-                                <div class="event-description1">
-                                    <h3 class="event-name">{{ evenement.nom }}</h3>
-                                    <span class="event-time"> <b>Heure : </b>{{ evenement.heure }}</span>
-                                    <span class="event-location"><b>Lieu :</b> {{ evenement.lieu }}</span>
-                                    <p></p>
-                                    <span class="event-description-text">{{ evenement.description }}</span>
-                                </div>
-                        
-                            </div>
-                        </v-card-text>
-                        
-                    </v-card>
-
-                    <v-card class="section qui-sommes-nous-card" v-show="showlabasamadagascar"> 
-                        <v-card-text></v-card-text>
-                        <h1>La-bas à Madagascar</h1>
-                            
-                        <v-card-text class="ici-en-mayenne-details1">
-                            <div v-for="(evenement, index) in evenementsicienmayenne" 
-                                 :key="evenement.nom" 
-                                 class="event-item1" 
-                                 :class="{'reverse-layout1': index % 2 !== 0}">
-                        
-                                <div class="event-photo-container">
-                                    <v-img :src="evenement.photo" 
-                                           class="event-photo1" 
-                                           contain>
-                                    </v-img>
-                                </div>
-                        
-                                <div class="event-description1">
-                                    <h3 class="event-name">{{ evenement.nom }}</h3>
-                                    <span class="event-time"> <b>Heure : </b>{{ evenement.heure }}</span>
-                                    <span class="event-location"><b>Lieu :</b> {{ evenement.lieu }}</span>
-                                    <p></p>
-                                    <span class="event-description-text">{{ evenement.description }}</span>
-                                </div>
-                        
-                            </div>
-                        </v-card-text>
-                        
-                    </v-card>
-                    
-
-                    <v-card class="section qui-sommes-nous-card" v-show="showambohitheque">
-                        <v-card-text></v-card-text>
-                        <h1>Ambohithèque</h1>
-                        
-                        <v-card-text class="ambohitheque-details">
-                          <div v-for="(ouvrage, index) in ouvragesAmbohitheque" :key="ouvrage.titre" class="book-item" :class="{'reverse-layout': index % 2 !== 0}">
-                            
-                            <!-- Première colonne : Visuel (photo) -->
-                            <div class="book-photo-container">
-                              <v-img :src="ouvrage.photo" class="book-photo" contain></v-img>
-                            </div>
-                            <div class="book-info">
-                              <h3 class="book-title">{{ ouvrage.titre }}</h3>
+            <h3>Ecological Watering Mobile App in Flutter</h3>
+            <p>Created a mobile application for ecological watering using Flutter, showcasing cross-platform development skills.</p>
+       
         
-                                <span class="event-author">Auteur : {{ ouvrage.auteur }}</span>
-                                <span class="event-editor">Éditeur : {{ ouvrage.editeur }}</span>
-                                <span class="event-year">Année d'édition : {{ ouvrage.annee }}</span>
-                            
-                            </div>
-               
-                            <!-- Troisième colonne : Résumé -->
-                            <div class="book-summary">
-                              <p>{{ ouvrage.resume }}</p>
-                            </div>
-                          </div>
-                        </v-card-text>
-                      </v-card>
-
-                </v-container>
-
-
-            </v-main>
-
-
-            <!-- Pied de page -->
-            <v-footer class="footer1" >
-                <v-container class="footer1">
-                    <p class="footer">&copy; 2024 Ambohimad. Tous droits réservés.</p>
-                </v-container>
-            </v-footer>
-        </v-app>
+            <h3>Embedded System Development</h3>
+            <p>Worked with STM32, relays, ultrasonic sensors, LEDs, temperature and humidity sensors, ESP32, and solenoid valves to create a comprehensive embedded system.</p>
         
+        
+            <h3>Mobile Programming (Flutter) - Gitlab</h3>
+            <p>Developed various mobile applications using Flutter, with projects managed and version-controlled on Gitlab.</p>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="certifications" class="interactive">
+        <h2>Certifications and Self-Learning</h2>
+        <div class="certification">
+            <h3>Perform distributed calculations on massive data</h3>
+    
+            <h3>Hackathon - West Data Festival</h3>
+        
+            <h3>Classify and segment visual data</h3>
+        
+            <h3>Learn about Deep Learning</h3>
+        
+            <h3>Introduction to Cybersecurity Tools & Cyber Attacks</h3>
+        
+            <h3>Managing Your Linux Server and Services</h3> 
+        
+            <h3>Learn about agile project management</h3> 
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact" class="interactive">
+        <h2>Contact</h2>
+        <p>You can contact me at <a href="mailto:your@email.com">domo@et.esiea.fr</a></p>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.interactive').forEach(section => {
+            section.addEventListener('mouseover', () => {
+                section.style.backgroundColor = '#e9ecef';
+            });
+            section.addEventListener('mouseout', () => {
+                section.style.backgroundColor = '#fff';
+            });
+        });
 
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script language="javascript" src="scripts/script.js"></script>
-    
+        // Highlight active menu link
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', (event) => {
+                document.querySelectorAll('.menu-link').forEach(link => link.classList.remove('active'));
+                event.target.classList.add('active');
+            });
+        });
+
+        // Smooth scroll to sections
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
